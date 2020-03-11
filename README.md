@@ -6,6 +6,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+## Installation
+Clone the repository-
+git clone https://github.com/nataliereshetnikova/hakuna_matata.git
+
+Then cd into the folder with this command-
+cd hakuna_matata
+
+Then do a composer install
+composer install
+
 
 ## About Laravel
 
