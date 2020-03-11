@@ -80,6 +80,7 @@
             @endif
 
             <div class="content">
+                <div class=""><img src="/img/logo.png"/></div>
                 <div class="title m-b-md">
                     Hakuna Matata
                 </div>
