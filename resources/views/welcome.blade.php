@@ -87,7 +87,7 @@
 
                 <div class="links">
                     <a href="/">Start</a>
-                    <a href="https://github.com/nataliereshetnikova/hakuna_matata">GitHub</a>
+                    <a href="https://github.com/nataliereshetnikova/hakuna_matata" target="blank">GitHub</a>
                 </div>
                 
             </div>
