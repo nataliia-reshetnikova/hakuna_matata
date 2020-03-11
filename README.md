@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn.icon-icons.com/icons2/390/PNG/512/lion_39035.png" width="100"><strong>Hakuna Matata<strong>
+<p align="center"><img src="https://cdn.icon-icons.com/icons2/390/PNG/512/lion_39035.png" width="100"><strong>Hakuna Matata</strong>
     <img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="300"></p>
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -7,7 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-# Thank you @HAMIDNGU and @amakaobehi for your contribution to the project :+1:
+# Thank you @HAMIDNGU and @amakaobehi for your contribution to the project :+1: 
+
 ## Installation
 
 **1.** Clone the repository-
