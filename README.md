@@ -49,9 +49,9 @@ php artisan serve
 ```
 **8.** If you have mistake on page concerning generating key, do as suggested on this page =)
 
-**9.** To see your database there is a tool - [DB Browser for SQLite](https://sqlitebrowser.org/) where you can open "database.sqlite" file and then run queries to see the data, for example
+**9.** To see your database there is a tool - [DB Browser for SQLite](https://sqlitebrowser.org/) where you can open "database.sqlite" file and then run SQL queries to see the data, for example
 ```
-php artisan serve
+SELECT * from users;
 ```
 
 ## About Laravel
