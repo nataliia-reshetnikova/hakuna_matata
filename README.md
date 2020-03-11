@@ -10,15 +10,44 @@
 
 ## Installation
 
-Clone the repository-
+**1.** Clone the repository-
+```
 git clone https://github.com/nataliereshetnikova/hakuna_matata.git
+```
 
-Then cd into the folder with this command-
+**2.** Then change directory into the folder with this command-
+```
 cd hakuna_matata
+```
 
-Then do a composer install
+**3.** Install all dependencies 
+```
 composer install
+```
 
+**4.** Make copy of ".env.example" file in same directory and rename it to ".env"<br/>
+**5.** In ".env":
+
+change:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+to
+ **DB_CONNECTION=sqlite**
+ 
+ **6.** In folder "database" create empty file "database.sqlite"<br/>
+ 
+ **7.** Run 
+```
+php artisan serve
+```
+**8.** If you have mistake on page concerning generating key, do as suggested on this page =)
+ 
 
 ## About Laravel
 
