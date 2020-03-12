@@ -51,13 +51,14 @@ to
 **7.** Run
 
 ```
-php artisan serve
+php artisan migrate
 ```
 
 **8.** Run
 
 ```
-php artisan migrate
+php artisan serve
+
 ```
 
 **9.** If you have mistake on page concerning generating key, do as suggested on this page =)
