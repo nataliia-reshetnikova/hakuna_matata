@@ -24,8 +24,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
-                    <div class="pr-2"><img src="/img/logo.png" alt="logo" style="max-height:25px"/></div>
-                    <div>Hakuna Matata</div>
+                    <div class="pr-2" style="border-right:solid 1px black"><img src="/img/logo.png" alt="logo" style="max-height:23px"/></div>
+                    <div class="pl-3 pt-1">Hakuna Matata</div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
