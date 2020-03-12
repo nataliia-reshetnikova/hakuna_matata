@@ -7,21 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-# Thank you @HAMIDNGU and @amakaobehi for your contribution to the project :+1: 
+# Thank you @HAMIDNGU and @amakaobehi for your contribution to the project :+1:
 
 ## Installation
 
 **1.** Clone the repository-
+
 ```
 git clone https://github.com/nataliereshetnikova/hakuna_matata.git
 ```
 
 **2.** Then change directory into the folder with this command-
+
 ```
 cd hakuna_matata
 ```
 
-**3.** Install all dependencies 
+**3.** Install all dependencies
+
 ```
 composer install
 ```
@@ -30,6 +33,7 @@ composer install
 **5.** In ".env":
 
 change:
+
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -38,18 +42,28 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
 to
- **DB_CONNECTION=sqlite**
- 
- **6.** In folder "database" create empty file "database.sqlite"<br/>
- 
- **7.** Run 
+**DB_CONNECTION=sqlite**
+
+**6.** In folder "database" create empty file "database.sqlite"<br/>
+
+**7.** Run
+
 ```
 php artisan serve
 ```
-**8.** If you have mistake on page concerning generating key, do as suggested on this page =)
 
-**9.** To see your database there is a tool - [DB Browser for SQLite](https://sqlitebrowser.org/) where you can open "database.sqlite" file and then run SQL queries to see the data, for example
+**8.** Run
+
+```
+php artisan migrate
+```
+
+**9.** If you have mistake on page concerning generating key, do as suggested on this page =)
+
+**10.** To see your database there is a tool - [DB Browser for SQLite](https://sqlitebrowser.org/) where you can open "database.sqlite" file and then run SQL queries to see the data, for example
+
 ```
 SELECT * from users;
 ```
@@ -58,13 +72,13 @@ SELECT * from users;
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
