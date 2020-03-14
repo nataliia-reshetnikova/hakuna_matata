@@ -8,7 +8,7 @@
         </div>
         <div class="col-9 p-5">
             <div class="d-flex pt-2">
-                <h1 class = "pr-2 font-weight-light">reshetnikova_nata</h1>
+                <h1 class = "pr-2 font-weight-light">{{$user -> username}}</h1>
                 <button style = "height:35px" class="btn btn-primary mt-1">Follow</button>
             </div>
             <div class="d-flex">
@@ -16,9 +16,9 @@
                 <div class="pr-4"><strong>195</strong> followers</div>
                 <div class="pr-4"><strong>383</strong> following</div>
             </div>
-            <div class = "pt-1 ">Natalie Reshetnikova</div>
-            <div class = "pt-1 ">About me section</div>
-            <div class = "pt-1 font-weight-bold"><a href="https://github.com/nataliereshetnikova">My Github</a></div>
+            <div class = "pt-1 ">{{$user -> profile -> title}}</div>
+            <div class = "pt-1 ">{{$user -> profile -> description}}</div>
+            <div class = "pt-1 font-weight-bold"><a href="https://github.com/nataliereshetnikova">{{$user -> profile -> url}}</a></div>
         </div>
     </div>
     <hr/>
