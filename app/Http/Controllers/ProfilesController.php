@@ -11,8 +11,9 @@ class ProfilesController extends Controller
         //for debugging
         //dd($user);
 
-        //how to get the actual user from database
-        $user = User::find($user);
+        //get the actual user from database
+        //if there is no user, ot will return 404
+        $user = User::findOrFail($user);
         return view('home', ['user'=>$user]);
     }
 }
