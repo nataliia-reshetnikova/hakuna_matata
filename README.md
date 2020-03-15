@@ -52,6 +52,10 @@ to
 
 ```
 php artisan migrate
+
+NB! After any change in database you should Run
+
+php artisan migrate:fresh
 ```
 
 **8.** Run
