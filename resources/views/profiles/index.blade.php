@@ -9,7 +9,7 @@
         <div class="col-9 p-5">
             <div class="d-flex pt-2">
                 <h1 class = "pr-2 font-weight-light">{{$user -> username}}</h1>
-                <button style = "height:35px" class="btn btn-primary mt-1">Follow</button>
+                <a href="/p/create"style = "height:35px" class="btn btn-primary mt-1">Add New Post</a>
             </div>
             <div class="d-flex">
                 <div class="pr-4"><strong>468</strong> posts</div>
