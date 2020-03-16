@@ -12,7 +12,7 @@
                 <a href="/p/create"style = "height:35px" class="btn btn-primary mt-1">Add New Post</a>
             </div>
             <div class="d-flex">
-                <div class="pr-4"><strong>468</strong> posts</div>
+                <div class="pr-4"><strong>{{$user->posts->count()}}</strong> posts</div>
                 <div class="pr-4"><strong>195</strong> followers</div>
                 <div class="pr-4"><strong>383</strong> following</div>
             </div>
@@ -22,16 +22,12 @@
         </div>
     </div>
     <hr/>
-    <div class="row pt-4">
-        <div class="col-4">
-            <img class="w-100" src="https://instagram.fyhu1-1.fna.fbcdn.net/v/t51.2885-15/e35/89122096_3085003924877286_4631885973139515278_n.jpg?_nc_ht=instagram.fyhu1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=ggZSWNSD6AIAX-qDU41&oh=76dea8809a164f5e00d6e17448af7424&oe=5EA63973" alt="">
+    <div class="row pt-5">
+    @foreach($user ->posts as $post)
+        <div class="col-4 pb-4">
+            <img class="w-100" src="/storage/{{$post->image}}" alt="">
         </div>
-        <div class="col-4">
-            <img class="w-100" src="https://instagram.fyhu1-1.fna.fbcdn.net/v/t51.2885-15/e35/88153829_197794344620886_3686473676567623170_n.jpg?_nc_ht=instagram.fyhu1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=c8tC5ooV8qgAX_LUtK6&oh=7418e78ea00ac9f378fac79916b48d67&oe=5EA2E5B8" alt="">
-        </div>
-        <div class="col-4">
-            <img class="w-100" src="https://instagram.fyhu1-1.fna.fbcdn.net/v/t51.2885-15/e35/87765106_1863595600439889_5020659779966487657_n.jpg?_nc_ht=instagram.fyhu1-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=pSYdn3e27rwAX8AfAxX&oh=46c6bedb4d766bc32214d8a9f59a9967&oe=5EA4BC48" alt=""> 
-        </div>
+    @endforeach
     </div>
 </div>
 @endsection
