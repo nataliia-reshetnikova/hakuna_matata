@@ -22,6 +22,8 @@ cd hakuna_matata
 
 ```
 composer install
+then
+composer require intervention/image
 ```
 
 **4.** Make copy of ".env.example" file in same directory and rename it to ".env"<br/>
