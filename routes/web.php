@@ -19,9 +19,8 @@ Route::get('/', function () {
 
 Route::post('follow/{user}', 'FollowsController@store');
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/posts', 'PostsController@index');
+
 // Route::get('/', 'PostsController@index');
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');

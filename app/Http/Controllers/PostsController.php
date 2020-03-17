@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Post;
 // import the Intervention Image Manager Class
 use Intervention\Image\Facades\Image;
 
