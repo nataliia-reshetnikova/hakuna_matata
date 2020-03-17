@@ -18,12 +18,14 @@ git clone https://github.com/nataliereshetnikova/hakuna_matata.git
 cd hakuna_matata
 ```
 
-**3.** Install all dependencies
+**3.** Install all dependencies-Run
 
 ```
 composer install
-then
-composer require intervention/image
+
+ composer require intervention/image
+
+    composer require laravel/telescope
 ```
 
 **4.** Make copy of ".env.example" file in same directory and rename it to ".env"<br/>
@@ -50,15 +52,17 @@ to
 ```
 php artisan migrate
 
-NB! After any change in database you should Run
+    NB! After any change in database you should Run
 
-php artisan migrate:fresh
+        php artisan migrate:fresh
 ```
 
 **8.** Run
 
 ```
-php artisan serve
+php artisan telescope:install
+
+    php artisan serve
 
 ```
 
