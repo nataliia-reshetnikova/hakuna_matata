@@ -9,21 +9,25 @@
         <div class="col-9 p-5">
             <div class="d-flex pt-2">
                 <h1 class = "pr-2 font-weight-light">{{$user -> username}}</h1>
-                @can('update', $user->profile)
-                <a href="/p/create"style = "height:35px" class="btn btn-primary mt-1 ml-5">Add New Post</a>
-                <a href="/profile/{{$user->id}}/edit"style = "height:35px" class="btn btn-primary mt-1 ml-3">Edit Profile</a>
-                @endcan
+                <follow-button user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
             </div>
 
             <div class="d-flex">
                 <div class="pr-4"><strong>{{$user->posts->count()}}</strong> posts</div>
-                <div class="pr-4"><strong>195</strong> followers</div>
-                <div class="pr-4"><strong>383</strong> following</div>
+                <div class="pr-4"><strong>{{$user->profile->followers->count()}}</strong> followers</div>
+                <div class="pr-4"><strong>{{$user->following->count()}}</strong> following</div>
             </div>
             <div class = "pt-1 ">{{$user -> profile -> title}}</div>
             <div class = "pt-1 ">{{$user -> profile -> description}}</div>
             <div class = "pt-1 font-weight-bold"><a href="https://github.com/nataliereshetnikova">{{$user -> profile -> url}}</a></div>
+            <div class = "pt-1">
+            @can('update', $user->profile)
+                <a href="/p/create"style = "height:35px" class="btn btn-primary mt-1 ">Add New Post</a>
+                <a href="/profile/{{$user->id}}/edit"style = "height:35px" class="btn btn-primary mt-1 ml-3">Edit Profile</a>
+            @endcan
+            </div>
         </div>
+
     </div>
     <hr/>
     <div class="row pt-5">

@@ -17,7 +17,8 @@ class ProfilesController extends Controller
         //get the actual user from database
         //if there is no user, ot will return 404
         $user = User::findOrFail($user);
-        return view('profiles.index', ['user'=>$user]);
+        $follows = (auth()->user()) ? auth()->user()->following->contains($user): false;
+        return view('profiles.index', ['user'=>$user, 'follows'=>$follows]);
     }
     //another way to get user info from db
     public function edit(User $user){
