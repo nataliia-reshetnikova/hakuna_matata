@@ -34,14 +34,14 @@ class ProfilesController extends Controller
         });
 
         
-        $followersCount = Cache::remember(
+        $followingCount = Cache::remember(
             'count.following'.$user->id, 
             now()->addSeconds(30), 
             function() use ($user){
             return $user->following->count();
         });
 
-        return view('profiles.index', compac('user', 'follows', 'postCount', 'followersCount', 'followingCount'));
+        return view('profiles.index', compact('user', 'follows', 'postCount', 'followersCount', 'followingCount'));
     }
     //another way to get user info from db
     public function edit(User $user){
