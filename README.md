@@ -23,9 +23,11 @@ cd hakuna_matata
 ```
 composer install
 
- composer require intervention/image
+     composer require intervention/image
 
-    composer require laravel/telescope
+            composer require laravel/telescope
+
+                php artisan telescope:install
 ```
 
 **4.** Make copy of ".env.example" file in same directory and rename it to ".env"<br/>
@@ -60,8 +62,8 @@ php artisan migrate
 **8.** Run
 
 ```
-php artisan telescope:install
 
+    php artisan key:generate
     php artisan serve
 
 ```
