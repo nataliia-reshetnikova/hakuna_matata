@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Profile;
+use Illuminate\Support\Facades\DB;
 // import the Intervention Image Manager Class
 use Intervention\Image\Facades\Image;
+
 
 class PostsController extends Controller
 {
@@ -18,8 +21,9 @@ class PostsController extends Controller
         $users = auth()->user()->following()->pluck('profiles.user_id');
         // paginate 5 latests posts with relationship on user
         $posts = Post::whereIn('user_id', $users)->with('user')->latest()->paginate(5);
-
-        return view('posts.index', compact('posts'));
+        // $profiles=DB::table('profiles')->get();
+        $profiles=DB::table('profiles')->inRandomOrder()->limit(5)->get();;
+        return view('posts/index', compact(['posts','profiles']));
     }
 
     public function create(){
