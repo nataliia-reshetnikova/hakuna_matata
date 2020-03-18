@@ -18,7 +18,30 @@ class ProfilesController extends Controller
         //if there is no user, ot will return 404
         $user = User::findOrFail($user);
         $follows = (auth()->user()) ? auth()->user()->following->contains($user): false;
-        return view('profiles.index', ['user'=>$user, 'follows'=>$follows]);
+        
+        $postCount = Cache::remember(
+            'count.posts'.$user->id, 
+            now()->addSeconds(30), 
+            function() use ($user){
+            return $user->posts->count();
+        });
+
+        $followersCount = Cache::remember(
+            'count.followers'.$user->id, 
+            now()->addSeconds(30), 
+            function() use ($user){
+            return $user->profile->followers->count();
+        });
+
+        
+        $followersCount = Cache::remember(
+            'count.following'.$user->id, 
+            now()->addSeconds(30), 
+            function() use ($user){
+            return $user->following->count();
+        });
+
+        return view('profiles.index', compac('user', 'follows', 'postCount', 'followersCount', 'followingCount'));
     }
     //another way to get user info from db
     public function edit(User $user){
