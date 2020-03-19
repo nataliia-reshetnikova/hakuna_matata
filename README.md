@@ -47,6 +47,14 @@ DB_PASSWORD=
 to
 **DB_CONNECTION=sqlite**
 
+then, create an account with mailtrap.io, and change the corresponding lines in .env:
+
+     MAIL_USERNAME
+     MAIL_PASSWORD
+     MAIL_FROM_ADDRESS
+
+with your informations given on mailtrap.io
+
 **6.** In folder "database" create empty file "database.sqlite"<br/>
 
 **7.** Run
@@ -62,9 +70,11 @@ php artisan migrate
 **8.** Run
 
 ```
+php artisan key:generate
 
-    php artisan key:generate
-    php artisan serve
+    php artisan telescope:install
+
+        php artisan serve
 
 ```
 
