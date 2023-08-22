@@ -9,7 +9,7 @@
 **1.** Clone the repository-
 
 ```
-git clone https://github.com/nataliereshetnikova/hakuna_matata.git
+git clone https://github.com/nataliia-reshetnikova/hakuna_matata.git
 ```
 
 **2.** Then change directory into the folder with this command-
